@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'screens/crisis_connect_screen.dart'; // Import your screen
+import 'home_screen.dart';
 
 void main() {
-  runApp(CrisisApp());
+  runApp(MyApp());
 }
 
-class CrisisApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Removes debug banner
+      debugShowCheckedModeBanner: false,
       title: 'CrisisConnect',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CrisisScreen(), // Set CrisisScreen as home screen
+      home: HomeScreen(),
     );
   }
 }
